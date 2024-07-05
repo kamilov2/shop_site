@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+<main>
+    <div class="container">
+
+        <div class="row p-5">
+            <div class="col-sm-12 col-md-6">
+                <img src="{{product.img.url}}" class="img-fluid" alt="...">
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <h5 class="">{{product.title}}</h5>
+                <p class="">{{product.brand}}</p>
+                <p class="">{{product.description}}</p>
+                <p class="">{{product.price}}</p>
+                <p class="">{{product.category}}</p>
+                <p class="">{{product.colour}}</p>
+                <button class="btn btn-outline-primary">Add to Cart</button>
+            </div>
+        </div>
+
+
+    </div>
+    </main>
+{% endblock %} 
